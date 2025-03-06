@@ -1,0 +1,26 @@
+{
+  "name": "polymarket-filter",
+  "version": "1.0.0",
+  "description": "A Chrome extension that enhances your experience on Polymarket by providing advanced filtering capabilities for prediction markets",
+  "main": "background.js",
+  "scripts": {
+    "build": "mkdir -p dist && cp -r manifest.json background.js content popup assets LICENSE README.md dist/",
+    "package": "npm run build && cd dist && zip -r ../polymarket-filter.zip *"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/polymarket-filter.git"
+  },
+  "keywords": [
+    "polymarket",
+    "chrome-extension",
+    "filter",
+    "prediction-markets"
+  ],
+  "author": "Polymarket Filter Contributors",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/polymarket-filter/issues"
+  },
+  "homepage": "https://github.com/yourusername/polymarket-filter#readme"
+} 

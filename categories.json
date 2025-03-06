@@ -1,0 +1,169 @@
+{
+  "categories": [
+    {
+      "id": "politics",
+      "name": "Politics",
+      "keywords": [
+        "trump",
+        "biden",
+        "election",
+        "president",
+        "congress",
+        "senate",
+        "house",
+        "vote",
+        "political",
+        "government"
+      ]
+    },
+    {
+      "id": "sports",
+      "name": "Sports",
+      "keywords": [
+        "nfl",
+        "nba",
+        "mlb",
+        "soccer",
+        "football",
+        "basketball",
+        "baseball",
+        "hockey",
+        "tennis", 
+        "ufc",
+        "mma",
+        "boxing",
+        "wrestling",
+        "cricket"
+      ]
+    },
+    {
+      "id": "crypto",
+      "name": "Crypto",
+      "keywords": [
+        "bitcoin",
+        "ethereum",
+        "crypto",
+        "btc",
+        "eth",
+        "blockchain",
+        "token",
+        "coin",
+        "xrp", 
+        "dogecoin",
+        "solana",
+        "polkadot",
+        "chainlink",
+        "avalanche",
+        "polygon"
+      ]
+    },
+    {
+      "id": "trump",
+      "name": "Trump",
+      "keywords": [
+        "trump"
+      ]
+    },
+    {
+      "id": "world-elections",
+      "name": "World Elections",
+      "keywords": [
+        "election",
+        "vote",
+        "ballot",
+        "parliament",
+        "prime minister"
+      ],
+      "excludeKeywords": [
+        "us election",
+        "american election"
+      ]
+    },
+    {
+      "id": "elon-tweets",
+      "name": "Elon Tweets",
+      "keywords": [
+        "elon",
+        "musk",
+        "tweet",
+        "twitter",
+        "x.com"
+      ]
+    },
+    {
+      "id": "mention-markets",
+      "name": "Mentions",
+      "keywords": [
+        "mention",
+        "say",
+        "says",
+        "said",
+        "speak",
+        "speaks"
+      ]
+    },
+    {
+      "id": "creators",
+      "name": "Creators",
+      "keywords": [
+        "creator",
+        "youtube",
+        "streamer",
+        "influencer",
+        "tiktok",
+        "instagram"
+      ]
+    },
+    {
+      "id": "pop-culture",
+      "name": "Pop Culture",
+      "keywords": [
+        "movie",
+        "music",
+        "celebrity",
+        "award",
+        "grammy",
+        "actor",
+        "actress",
+        "kanye",
+        "kardashian",
+        "andrew tate",
+        "taylor swift",
+        "beyonce",
+        "jay-z",
+        "selena gomez",
+        "justin bieber",
+        "kylie jenner",
+        "ryan reynolds",
+        "chris evans",
+        "chris hemsworth",
+        "chris pratt",
+        "chris martin",
+        "chris pine",
+        "harry and meghan",
+        "prince harry",
+        "prince william",
+        "prince george",
+        "prince charles",
+        "prince andrew",
+        "prince edward",
+        "prince henry"        
+      ]
+    },
+    {
+      "id": "business",
+      "name": "Business",
+      "keywords": [
+        "stock",
+        "market",
+        "company",
+        "business",
+        "economy",
+        "finance",
+        "ceo",
+        "earnings",
+        "revenue"
+      ]
+    }
+  ]
+} 

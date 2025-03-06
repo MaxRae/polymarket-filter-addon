@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polymarket Filter</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Polymarket Filter</h1>
+      <div class="toggle-container">
+        <label class="switch">
+          <input type="checkbox" id="filter-toggle" checked>
+          <span class="slider round"></span>
+        </label>
+        <span class="toggle-label">Enabled</span>
+      </div>
+    </header>
+
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="filters">Filters</button>
+      <button class="tab-btn" data-tab="saved">Saved</button>
+      <button class="tab-btn" data-tab="tracked">Tracked</button>
+    </div>
+
+    <div class="tab-content active" id="filters-tab">
+      <section class="filter-section">
+        <h2>Keywords</h2>
+        <div class="input-group">
+          <input type="text" id="keyword-input" placeholder="Enter keyword...">
+          <button id="add-keyword">Add</button>
+        </div>
+        <div class="tags-container" id="keywords-container"></div>
+      </section>
+
+      <section class="filter-section">
+        <h2>Categories</h2>
+        <div class="categories-grid">
+          <!-- Categories will be dynamically generated from categories.json -->
+        </div>
+      </section>
+
+      <section class="filter-section">
+        <h2>Price Range</h2>
+        <div class="range-container">
+          <div class="range-inputs">
+            <input type="number" id="price-min" min="0" max="100" value="0">
+            <span>to</span>
+            <input type="number" id="price-max" min="0" max="100" value="100">
+          </div>
+          <div class="range-slider">
+            <input type="range" id="price-range-min" min="0" max="100" value="0">
+            <input type="range" id="price-range-max" min="0" max="100" value="100">
+          </div>
+        </div>
+      </section>
+
+      <section class="filter-section">
+        <h2>Volume & Liquidity</h2>
+        <div class="threshold-container">
+          <label>
+            Min Volume ($):
+            <input type="number" id="volume-threshold" min="0" value="0">
+          </label>
+          <label>
+            Min Liquidity ($):
+            <input type="number" id="liquidity-threshold" min="0" value="0">
+          </label>
+        </div>
+      </section>
+
+      <div class="actions">
+        <button id="save-config" class="btn primary">Save Configuration</button>
+        <button id="apply-filters" class="btn secondary">Apply Filters</button>
+      </div>
+    </div>
+
+    <div class="tab-content" id="saved-tab">
+      <div class="saved-filters-container">
+        <p class="empty-state" id="no-saved-filters">No saved filter configurations yet.</p>
+        <ul id="saved-filters-list"></ul>
+      </div>
+    </div>
+
+    <div class="tab-content" id="tracked-tab">
+      <div class="tracked-markets-container">
+        <p class="empty-state" id="no-tracked-markets">No tracked markets yet.</p>
+        <ul id="tracked-markets-list"></ul>
+      </div>
+    </div>
+
+    <footer>
+      <p>Polymarket Filter v1.0.0</p>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html> 

@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Polymarket Filter",
+  "version": "1.0.0",
+  "description": "Filter Polymarket prediction markets based on custom criteria",
+  "permissions": ["storage", "activeTab"],
+  "host_permissions": [
+    "https://polymarket.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "assets/icons/icon16.png",
+      "48": "assets/icons/icon48.png",
+      "128": "assets/icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "assets/icons/icon16.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://polymarket.com/*"],
+      "js": ["content/content.js"],
+      "css": ["content/content.css"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["categories.json"],
+      "matches": ["https://polymarket.com/*"]
+    }
+  ]
+} 
