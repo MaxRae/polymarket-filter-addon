@@ -2,6 +2,13 @@
 
 A Chrome extension that enhances your experience on [Polymarket](https://polymarket.com) by providing advanced filtering capabilities for prediction markets.
 
+## ⚠️ Deprecation Notice
+
+Good news: Polymarket shipped an upgrade of their website that features a filter!
+Bad news: The filter is currently only for sport bets, and has to be activated anew with each session.
+
+I might make the necessary updates to this app, but I have already sent a feature request to the Polymarket team to improve their filter.
+
 ## Features
 
 - **Market Filtering**: Filter markets based on custom criteria such as price range, volume, liquidity, and more
